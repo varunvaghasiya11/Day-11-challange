@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen active">
+            <h1>Quick Quiz</h1>
+            <p>Test your knowledge with 5 quick questions!</p>
+            <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="header">
+                <div class="progress">Question <span id="current-question-num">1</span>/<span id="total-questions">5</span></div>
+                <div class="timer">Time: <span id="time-left">15</span>s</div>
+            </div>
+            <h2 id="question-text">Question text goes here</h2>
+            <div id="answer-buttons" class="btn-grid">
+            </div>
+            <button id="next-btn" class="btn hide">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Quiz Completed!</h2>
+            <div class="score-display">
+                <span id="score-text">0</span> / <span id="max-score">5</span>
+            </div>
+            <p id="feedback-text">Great job!</p>
+            <button id="restart-btn" class="btn primary-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
